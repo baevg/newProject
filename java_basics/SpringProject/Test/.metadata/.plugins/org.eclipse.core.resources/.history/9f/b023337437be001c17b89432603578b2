@@ -1,0 +1,28 @@
+package spring_introdaction.withJavaCode;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component("personsBeanJava")
+public class PersonNotAnnotation {
+	private Pet pet;
+	private String name;
+	private int age;
+
+	public PersonNotAnnotation() {
+		System.out.println("Class Person bean is created - default");
+	}
+
+	@Autowired
+	public PersonNotAnnotation(@Qualifier("frogBean") Pet pet) {
+		System.out.println("Class Person bean is created");
+		this.pet = pet;
+	}
+	
+	public void callYourPet() {
+		System.out.println("Hello my lovely Pet");
+		pet.say();
+	}
+
+}

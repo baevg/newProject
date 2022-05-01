@@ -1,0 +1,22 @@
+package spring_introdaction.withJavaCode;
+
+public class PersonNotAnnotation {
+	private Pet pet;
+	private String name;
+	private int age;
+
+	public PersonNotAnnotation() {
+		System.out.println("Class Person bean is created - default");
+	}
+
+	public PersonNotAnnotation(Pet pet) {
+		System.out.println("Class Person bean is created");
+		this.pet = pet;
+	}
+	
+	public void callYourPet() {
+		System.out.println("Hello my lovely Pet");
+		pet.say();
+	}
+
+}

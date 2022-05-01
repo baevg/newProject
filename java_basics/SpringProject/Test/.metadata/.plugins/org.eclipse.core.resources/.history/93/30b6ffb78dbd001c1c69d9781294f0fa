@@ -1,0 +1,5 @@
+package spring_introdaction;
+
+public class TestBeanScope {
+
+}

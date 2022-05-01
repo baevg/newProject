@@ -1,0 +1,15 @@
+package spring_introdaction.withJavaCode;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
+
+@Configuration
+
+public class ConfigWithJavaCodeNotAnnotation {
+	@Bean
+	@Scope("singleton")
+	public Pet frogBean() {
+		return new Frog();
+	}
+}
