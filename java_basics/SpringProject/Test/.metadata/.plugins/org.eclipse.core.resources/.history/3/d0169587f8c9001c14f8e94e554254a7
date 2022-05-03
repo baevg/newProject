@@ -1,0 +1,19 @@
+package aop.aspects;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.Aspect;
+import org.springframework.stereotype.Component;
+
+@Component
+@Aspect
+public class AroundLoggingAspect {
+
+	@Around("execution(public String returnBook())")
+	public String aroundReturnBookLoggingAdvice(ProceedingJoinPoint proceedingJoinPoint) {
+		System.out.println("aroundReturnBookLoggingAdvice: В библиотеку пытаются книгу");
+		System.out.println("aroundReturnBookLoggingAdvice: В библиотеку успешно возврнули книгу");
+		
+		return "";
+	}
+}

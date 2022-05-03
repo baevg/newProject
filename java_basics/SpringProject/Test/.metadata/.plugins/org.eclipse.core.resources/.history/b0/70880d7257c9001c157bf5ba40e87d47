@@ -1,0 +1,44 @@
+package aop.aspects;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.springframework.stereotype.Component;
+
+@Component
+@Aspect
+public class LoggingAndSecurityAspect {
+	
+	@Before("execution(* get*())") 	
+	public void beforeGetLoggingAdvice() {
+		System.out.println("beforeGetLoggingAdvice: попытка получить книгу/журнал");
+	}
+	
+	@Before("execution(* get*())") 	
+	public void beforeGetSecurityAdvice() {
+		System.out.println("beforeGetSecurityAdvice: проверка прав на получение книги/журнала");
+	}
+	
+	
+//	@Before("execution(public void get*())") // для всех методов начинающихся на get
+//	@Before("execution(public void getBook())") // для всего где есть метод getBook()
+//	@Before("execution(public void aop.UniLibrary.getBook())") // getBook для конкретного класса
+
+//	@Before("execution(public void getBook(String))") // для всего где есть метод getBook(String)
+//	@Before("execution(public void *(*))") // любой метод с любым одним параметром
+//	@Before("execution(public void *(..))") // любой метод с любым количеством параметром-(0 и более)
+	
+//	@Before("execution(public void getBook(aop.Book))") 	
+	@Before("execution(public void getBook(aop.Book, ..))") 	
+	public void beforeGetBookAdvice() {
+		System.out.println("beforeGetBookAdvice: попытка получить книгу");
+	}
+
+//	@Before("execution(public String returnBook())") // с указанным возвращаемым типом
+//	@Before("execution(public * returnBook())") // для любого возвращаемого типа
+//	@Before("execution(* returnBook())") // для любого возвращаемого типа (Модификатор доступа не является обязательным параметром)
+//	@Before("execution(* *())") // будет всегда срабатывать
+//	public void beforeReturnBookAdvice() {
+//		System.out.println("beforeReturnBookAdvice: попытка вернуть книгу");
+//	}
+
+}

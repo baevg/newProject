@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<item key="org.eclipse.jdt.ui.lastextjar" value="D:\forJava\SpringProject\Test"/>
 	<item key="filters_last_used" value="filter_imports;"/>
+	<item key="delegateUpdating" value="false"/>
 	<section name="JavaElementSearchActions">
 	</section>
 	<section name="OptionalMessageDialog.hide.">
@@ -29,6 +30,12 @@
 		<item key="SynchronizedModifier" value="false"/>
 		<item key="Comments" value="false"/>
 		<item key="VisibilityModifier" value="1"/>
+		<item key="LimitElements" value="false"/>
+		<item key="IgnoreDefault" value="true"/>
+		<item key="StringStyle" value="0"/>
+		<item key="LimitValue" value="10"/>
+		<item key="SkipNull" value="false"/>
+		<item key="ToStringTemplateSelected" value="0"/>
 	</section>
 	<section name="DialogBounds_OverrideMethodDialog">
 		<item key="DIALOG_X_ORIGIN" value="226"/>
@@ -68,8 +75,8 @@
 		<item key="RemoveFinal" value="false"/>
 	</section>
 	<section name="DialogBounds_GetterSetterTreeSelectionDialog">
-		<item key="DIALOG_X_ORIGIN" value="224"/>
-		<item key="DIALOG_Y_ORIGIN" value="56"/>
+		<item key="DIALOG_X_ORIGIN" value="755"/>
+		<item key="DIALOG_Y_ORIGIN" value="70"/>
 		<item key="DIALOG_WIDTH" value="526"/>
 		<item key="DIALOG_HEIGHT" value="696"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
@@ -103,5 +110,12 @@
 		<item key="expanded8" value="false"/>
 	</section>
 	<section name="RenameInformationPopup">
+	</section>
+	<section name="DialogBounds_GenerateToStringDialog">
+		<item key="DIALOG_X_ORIGIN" value="710"/>
+		<item key="DIALOG_Y_ORIGIN" value="68"/>
+		<item key="DIALOG_WIDTH" value="516"/>
+		<item key="DIALOG_HEIGHT" value="691"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 </section>

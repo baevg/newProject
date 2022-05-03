@@ -1,0 +1,24 @@
+package aop.aspects;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.springframework.stereotype.Component;
+
+@Component
+@Aspect
+public class LoggingAspect {
+//	@Before("execution(public void get*())") // для всех методов начинающихся на get
+	@Before("execution(public void getBook())") // для всего где есть метод getBook()
+//	@Before("execution(public void aop.UniLibrary.getBook())") // getBook для конкретного класса
+	public void beforeGetBookAdvice() {
+		System.out.println("beforeGetBookAdvice: попытка получить книгу");
+	}
+
+//	@Before("execution(public String returnBook())") // с указанным возвращаемым типом
+//	@Before("execution(public * returnBook())") // для любого возвращаемого типа
+	@Before("execution(* returnBook())") // для любого возвращаемого типа (Модификатор доступа не является обязательным параметром)
+	public void beforeReturnBookAdvice() {
+		System.out.println("beforeReturnBookAdvice: попытка вернуть книгу");
+	}
+
+}
