@@ -5,7 +5,7 @@
 ### Java ###
 # Compiled class file
 *.class
-
+*.metadata
 # Log file
 *.log
 
@@ -169,7 +169,7 @@ dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
 .mvn/wrapper/maven-wrapper.jar
-.flattened-pom.xml
+.flattened-git add ..xml
 
 ### Windows ###
 # Windows thumbnail cache files

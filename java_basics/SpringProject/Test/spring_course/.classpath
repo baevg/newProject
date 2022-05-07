@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" output="target/classes" path="src/main/java">
+	<classpathentry excluding="entity/" kind="src" output="target/classes" path="src/main/java">
 		<attributes>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
@@ -25,7 +25,8 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry exported="true" kind="lib" path="D:/forJava/SpringProject/Test/javax.annotation-api-1.3.2.jar"/>
-	<classpathentry kind="lib" path="D:/forJava/SpringProject/Test/aspectjweaver-1.9.8.jar"/>
+	<classpathentry kind="lib" path="D:/Repos/newProject/java_basics/SpringProject/Test/aspectjweaver-1.9.8.jar"/>
+	<classpathentry kind="lib" path="D:/Repos/newProject/java_basics/SpringProject/Test/javax.annotation-api-1.3.2.jar"/>
+	<classpathentry kind="lib" path="D:/Repos/newProject/java_basics/SpringProject/Test/mysql-connector-java-8.0.29/mysql-connector-java-8.0.29/mysql-connector-java-8.0.29.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
